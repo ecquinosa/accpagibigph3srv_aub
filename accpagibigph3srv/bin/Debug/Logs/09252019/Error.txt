@@ -1,0 +1,40 @@
+09/25/2019 10:06:06 AM GetDailyTxnAndPackData(): System.Web.Services.Protocols.SoapException: Server was unable to process request. ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\PAGIBIG\ACCPAGIBIGPH3\security\privateKey.key'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at System.IO.File.ReadAllText(String path)
+   at ACC_MS_WEBSERVICE.ACC_MS_WEBSERVICE..ctor() in F:\Projects\ACC_MS_WEBSERVICE\ACC_MS_WEBSERVICE\ACC_MS_WEBSERVICE.asmx.vb:line 29
+   --- End of inner exception stack trace ---
+09/25/2019 10:06:36 AM ProgramThread(): Runtime catched error Cannot find column [PagIBIGID].
+09/25/2019 10:12:11 AM ManualPackData failed to 2009192409101001884999. Reference Not Found.
+09/25/2019 10:12:52 AM ManualPackData failed to 2009192409101003095122. Reference Not Found.
+09/25/2019 10:17:02 AM ManualPackData failed to 2009192409102000488155. Reference Not Found.
+09/25/2019 10:17:55 AM ManualPackData failed to 2009192409102000536300. Reference Not Found.
+09/25/2019 10:17:59 AM ManualPackData failed to 2009192409102003384060. Reference Not Found.
+09/25/2019 10:19:42 AM GetDailyTxnAndPackData(): The request was aborted: The operation has timed out.
+09/25/2019 10:20:31 AM ManualPackData failed to 2009192409101001884999. Reference Not Found.
+09/25/2019 10:24:48 AM GetDailyTxnAndPackData(): The request was aborted: The operation has timed out.
+09/25/2019 02:35:43 PM ProgramThread(): Runtime catched error Cannot create a file when that file already exists.
+
+09/25/2019 02:35:49 PM ProgramThread(): Runtime catched error Cannot create a file when that file already exists.
+
+09/25/2019 02:56:33 PM ProgramThread(): Runtime catched error Cannot create a file when that file already exists.
+
+09/25/2019 02:58:31 PM ProgramThread(): Runtime catched error Cannot create a file when that file already exists.
+
+09/25/2019 02:59:20 PM ProgramThread(): Runtime catched error Cannot create a file when that file already exists.
+
+09/25/2019 02:59:31 PM ProgramThread(): Runtime catched error Cannot create a file when that file already exists.
+
+09/25/2019 02:59:39 PM ProgramThread(): Runtime catched error Cannot create a file when that file already exists.
+
+09/25/2019 04:52:31 PM ProgramThread(): Runtime catched error Cannot create a file when that file already exists.
+
+09/25/2019 04:52:45 PM ProgramThread(): Runtime catched error Cannot create a file when that file already exists.
+
+09/25/2019 04:53:33 PM ProgramThread(): Runtime catched error Cannot create a file when that file already exists.
+
+09/25/2019 04:56:13 PM ProgramThread(): Runtime catched error The file 'F:\PAGIBIG\ACCPAGIBIGPH3\AUB\PACKUPDATA\\DONE\101003095122.zip' already exists.
+09/25/2019 05:00:03 PM ProgramThread(): Runtime catched error The file 'F:\PAGIBIG\ACCPAGIBIGPH3\AUB\PACKUPDATA\\DONE\101003095122.zip' already exists.

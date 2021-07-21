@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "accpagibigph3srv", "accpagibigph3srv\accpagibigph3srv.csproj", "{72EEBFB4-EADA-48C8-9A32-6F18B1136F2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72EEBFB4-EADA-48C8-9A32-6F18B1136F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72EEBFB4-EADA-48C8-9A32-6F18B1136F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72EEBFB4-EADA-48C8-9A32-6F18B1136F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72EEBFB4-EADA-48C8-9A32-6F18B1136F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3A343B7-B7BD-4A71-89DC-94DF3CEFFF7A}
+	EndGlobalSection
+EndGlobal

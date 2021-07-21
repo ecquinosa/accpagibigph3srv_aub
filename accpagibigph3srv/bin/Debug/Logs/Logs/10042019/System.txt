@@ -1,0 +1,106 @@
+10/04/2019 02:46:26 PM Application started
+10/04/2019 02:46:26 PM Checking config...
+10/04/2019 02:46:26 PM RunBankProcess started...
+10/04/2019 02:46:26 PM Extracting data from webservice...
+10/04/2019 02:46:27 PM Extracted data: 1
+10/04/2019 02:46:30 PM MPD extracted 2009190410101001163341 1 of 1
+10/04/2019 02:46:30 PM Compressing folder/s...
+10/04/2019 02:46:31 PM 101001163341 compressed successfully
+10/04/2019 02:46:31 PM Total compressed folder(s): 1
+10/04/2019 02:46:31 PM Deleting folder/s already compressed...
+10/04/2019 02:46:31 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\101001163341 deleted successfully
+10/04/2019 02:46:31 PM Sending files to sftp...
+10/04/2019 02:46:31 PM SynchronizeDirectories started...
+10/04/2019 02:46:57 PM Upload of 101001163341.zip succeeded
+10/04/2019 02:46:58 PM Total zipped file(s) uploaded: 1
+10/04/2019 02:46:58 PM Start: 10/04/2019 02:46:26 PM 
+10/04/2019 02:46:58 PM End: 10/04/2019 02:46:58 PM 
+10/04/2019 02:46:58 PM End of process
+10/04/2019 02:47:35 PM Application started
+10/04/2019 02:47:35 PM Checking config...
+10/04/2019 02:47:35 PM RunBankProcess started...
+10/04/2019 02:47:35 PM Extracting data from webservice...
+10/04/2019 02:47:37 PM Extracted data: 5
+10/04/2019 02:47:39 PM MPD extracted 2009190410101002041214 1 of 5
+10/04/2019 02:47:42 PM MPD extracted 2009190410101002331594 2 of 5
+10/04/2019 02:47:45 PM MPD extracted 2009190410102000268302 3 of 5
+10/04/2019 02:47:47 PM MPD extracted 2009190410102000520484 4 of 5
+10/04/2019 02:47:50 PM MPD extracted 2009190410103001962708 5 of 5
+10/04/2019 02:47:50 PM Compressing folder/s...
+10/04/2019 02:47:50 PM 101002041214 compressed successfully
+10/04/2019 02:47:50 PM 101002331594 compressed successfully
+10/04/2019 02:47:50 PM 102000268302 compressed successfully
+10/04/2019 02:47:50 PM 102000520484 compressed successfully
+10/04/2019 02:47:50 PM 103001962708 compressed successfully
+10/04/2019 02:47:50 PM Total compressed folder(s): 5
+10/04/2019 02:47:50 PM Deleting folder/s already compressed...
+10/04/2019 02:47:50 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\101002041214 deleted successfully
+10/04/2019 02:47:50 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\101002331594 deleted successfully
+10/04/2019 02:47:50 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\102000268302 deleted successfully
+10/04/2019 02:47:50 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\102000520484 deleted successfully
+10/04/2019 02:47:50 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\103001962708 deleted successfully
+10/04/2019 02:47:50 PM Sending files to sftp...
+10/04/2019 02:47:50 PM SynchronizeDirectories started...
+10/04/2019 02:48:24 PM Upload of 101002041214.zip succeeded
+10/04/2019 02:48:25 PM Upload of 101002331594.zip succeeded
+10/04/2019 02:48:25 PM Upload of 102000268302.zip succeeded
+10/04/2019 02:48:27 PM Upload of 102000520484.zip succeeded
+10/04/2019 02:48:27 PM Upload of 103001962708.zip succeeded
+10/04/2019 02:48:29 PM Total zipped file(s) uploaded: 5
+10/04/2019 02:48:29 PM Start: 10/04/2019 02:47:35 PM 
+10/04/2019 02:48:29 PM End: 10/04/2019 02:48:29 PM 
+10/04/2019 02:48:29 PM End of process
+10/04/2019 02:49:01 PM Application started
+10/04/2019 02:49:01 PM Checking config...
+10/04/2019 02:49:01 PM RunBankProcess started...
+10/04/2019 02:49:01 PM Extracting data from webservice...
+10/04/2019 02:49:04 PM Extracted data: 10
+10/04/2019 02:49:08 PM MPD extracted 2009190410105001803350 1 of 10
+10/04/2019 02:49:12 PM MPD extracted 2009190410109003179035 2 of 10
+10/04/2019 02:49:14 PM MPD extracted 2009190410121019653923 3 of 10
+10/04/2019 02:49:17 PM MPD extracted 2009190410121024930145 4 of 10
+10/04/2019 02:49:20 PM MPD extracted 2009190410121028085406 5 of 10
+10/04/2019 02:49:24 PM MPD extracted 2009190410121036339937 6 of 10
+10/04/2019 02:49:26 PM MPD extracted 2009190410121041472879 7 of 10
+10/04/2019 02:49:29 PM MPD extracted 2009190410121042649088 8 of 10
+10/04/2019 02:49:31 PM MPD extracted 2009190410121070599373 9 of 10
+10/04/2019 02:49:36 PM MPD extracted 2009190410121083820969 10 of 10
+10/04/2019 02:49:36 PM Compressing folder/s...
+10/04/2019 02:49:36 PM 105001803350 compressed successfully
+10/04/2019 02:49:36 PM 109003179035 compressed successfully
+10/04/2019 02:49:36 PM 121019653923 compressed successfully
+10/04/2019 02:49:36 PM 121024930145 compressed successfully
+10/04/2019 02:49:36 PM 121028085406 compressed successfully
+10/04/2019 02:49:37 PM 121036339937 compressed successfully
+10/04/2019 02:49:37 PM 121041472879 compressed successfully
+10/04/2019 02:49:37 PM 121042649088 compressed successfully
+10/04/2019 02:49:37 PM 121070599373 compressed successfully
+10/04/2019 02:49:37 PM 121083820969 compressed successfully
+10/04/2019 02:49:37 PM Total compressed folder(s): 10
+10/04/2019 02:49:37 PM Deleting folder/s already compressed...
+10/04/2019 02:49:37 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\105001803350 deleted successfully
+10/04/2019 02:49:37 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\109003179035 deleted successfully
+10/04/2019 02:49:37 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\121019653923 deleted successfully
+10/04/2019 02:49:37 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\121024930145 deleted successfully
+10/04/2019 02:49:37 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\121028085406 deleted successfully
+10/04/2019 02:49:37 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\121036339937 deleted successfully
+10/04/2019 02:49:37 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\121041472879 deleted successfully
+10/04/2019 02:49:37 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\121042649088 deleted successfully
+10/04/2019 02:49:37 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\121070599373 deleted successfully
+10/04/2019 02:49:37 PM D:\ACCPAGIBIGPH3\AUB\PACKUPDATA\121083820969 deleted successfully
+10/04/2019 02:49:37 PM Sending files to sftp...
+10/04/2019 02:49:37 PM SynchronizeDirectories started...
+10/04/2019 02:50:03 PM Upload of 105001803350.zip succeeded
+10/04/2019 02:50:03 PM Upload of 109003179035.zip succeeded
+10/04/2019 02:50:04 PM Upload of 121019653923.zip succeeded
+10/04/2019 02:50:04 PM Upload of 121024930145.zip succeeded
+10/04/2019 02:50:05 PM Upload of 121028085406.zip succeeded
+10/04/2019 02:50:07 PM Upload of 121036339937.zip succeeded
+10/04/2019 02:50:07 PM Upload of 121041472879.zip succeeded
+10/04/2019 02:50:10 PM Upload of 121042649088.zip succeeded
+10/04/2019 02:50:10 PM Upload of 121070599373.zip succeeded
+10/04/2019 02:50:10 PM Upload of 121083820969.zip succeeded
+10/04/2019 02:50:11 PM Total zipped file(s) uploaded: 10
+10/04/2019 02:50:11 PM Start: 10/04/2019 02:49:01 PM 
+10/04/2019 02:50:11 PM End: 10/04/2019 02:50:11 PM 
+10/04/2019 02:50:11 PM End of process

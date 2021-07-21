@@ -1,0 +1,43 @@
+F:\Projects\accpagibigph3srv\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe
+F:\Projects\accpagibigph3srv\accpagibigph3srv\bin\Debug\accpagibigph3srv.pdb
+F:\Projects\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.csprojAssemblyReference.cache
+F:\Projects\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CoreCompileInputs.cache
+F:\Projects\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.exe
+F:\Projects\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.pdb
+F:\Projects\accpagibigph3srv\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe.config
+F:\Projects\accpagibigph3srv\accpagibigph3srv\bin\Debug\AllcardEncryptDecrypt.dll
+F:\Projects\accpagibigph3srv\accpagibigph3srv\bin\Debug\WinSCPnet.dll
+F:\Projects\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CopyComplete
+F:\Projects\accpagibigph3srv\accpagibigph3srv\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.csprojAssemblyReference.cache
+F:\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CoreCompileInputs.cache
+F:\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.exe
+F:\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.pdb
+F:\accpagibigph3srv\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe.config
+F:\accpagibigph3srv\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe
+F:\accpagibigph3srv\accpagibigph3srv\bin\Debug\accpagibigph3srv.pdb
+F:\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CopyComplete
+I:\EDEL QUINOSA\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.csprojAssemblyReference.cache
+I:\EDEL QUINOSA\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CoreCompileInputs.cache
+I:\EDEL QUINOSA\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.exe
+I:\EDEL QUINOSA\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.pdb
+I:\EDEL QUINOSA\accpagibigph3srv\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe.config
+I:\EDEL QUINOSA\accpagibigph3srv\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe
+I:\EDEL QUINOSA\accpagibigph3srv\accpagibigph3srv\bin\Debug\accpagibigph3srv.pdb
+I:\EDEL QUINOSA\accpagibigph3srv\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CopyComplete
+I:\EDEL QUINOSA\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.csprojAssemblyReference.cache
+I:\EDEL QUINOSA\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CoreCompileInputs.cache
+I:\EDEL QUINOSA\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.exe
+I:\EDEL QUINOSA\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.pdb
+I:\EDEL QUINOSA\accpagibigph3srv_aub\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe.config
+I:\EDEL QUINOSA\accpagibigph3srv_aub\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe
+I:\EDEL QUINOSA\accpagibigph3srv_aub\accpagibigph3srv\bin\Debug\accpagibigph3srv.pdb
+I:\EDEL QUINOSA\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CopyComplete
+D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe.config
+D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe
+D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\bin\Debug\accpagibigph3srv.pdb
+D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.csprojAssemblyReference.cache
+D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CoreCompileInputs.cache
+D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CopyComplete
+D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.exe
+D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.pdb

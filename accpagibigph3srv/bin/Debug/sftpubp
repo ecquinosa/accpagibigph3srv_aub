@@ -1,0 +1,7 @@
+SFTP_HOST=sftp.allcardtech.com.ph
+SFTP_PORT=2022
+SFTP_USER=bayambang
+SFTP_PASS=Argon2016*
+SFTP_SshHostKeyFingerprint=ssh-ed25519 256 20:c3:ed:d6:8b:ef:83:0c:5f:e0:0b:58:78:93:6b:c6
+SFTP_LOCALPATH=I:\EDEL QUINOSA\accpagibigph3srv_aub\TEST
+SFTP_SFTPPATH=/Bayambang/test e/

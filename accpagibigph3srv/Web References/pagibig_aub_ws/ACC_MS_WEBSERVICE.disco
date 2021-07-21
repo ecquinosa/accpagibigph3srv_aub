@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost:1649/ACC_MS_WEBSERVICE.asmx?wsdl" docRef="http://localhost:1649/ACC_MS_WEBSERVICE.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost:1649/ACC_MS_WEBSERVICE.asmx" xmlns:q1="http://allcardtech.com.ph/" binding="q1:ACC_MS_WEBSERVICESoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost:1649/ACC_MS_WEBSERVICE.asmx" xmlns:q2="http://allcardtech.com.ph/" binding="q2:ACC_MS_WEBSERVICESoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

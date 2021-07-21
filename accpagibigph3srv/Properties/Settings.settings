@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="accpagibigph3srv.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SYS_DATE" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CONSO_CNTR" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="accpagibigph3srv_pagibig_aub_ws_ACC_MS_WEBSERVICE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:1649/ACC_MS_WEBSERVICE.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
