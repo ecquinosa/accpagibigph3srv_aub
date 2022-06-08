@@ -3,6 +3,7 @@ using System;
 using System.Data;
 using System.Security.Cryptography;
 using System.IO;
+using System.Collections.Generic;
 
 namespace accpagibigph3srv
 {
@@ -12,15 +13,6 @@ namespace accpagibigph3srv
         #region constructors
 
         private static string APP_NAME = "accpagibigph3srv";
-        private static string WS_REPO = "";
-        private static string BANK_REPO = "";
-        private static int PROCESS_INTERVAL_SECONDS = 120;
-        private static short SEND_TO_SFTP;
-
-        private static string DB_SERVER = "";
-        private static string DB_NAME = "";
-        private static string DB_USER = "";
-        private static string DB_PASS = "";
 
         private delegate void dlgtProcess(DateTime dtmReportDate);
 
@@ -29,11 +21,23 @@ namespace accpagibigph3srv
         private static string configFile = AppDomain.CurrentDomain.BaseDirectory + "config";
         private static string refDateFile = AppDomain.CurrentDomain.BaseDirectory + "refDates";
 
+        public static Config config;
+
         private static bool IsBankProcessReady = true;
 
         private static DataTable dtBankFiles;
 
         #endregion
+
+
+        private static DAL dalLocal = null;
+        private static DAL dalSys = null;
+
+        public enum bankID
+        {
+            UBP = 1,
+            AUB
+        }
 
         static void Main()
         {
@@ -53,28 +57,6 @@ namespace accpagibigph3srv
                 System.Threading.Thread.Sleep(5000);
                 intRetry += 1;
             }
-
-            ////tempo 06/20
-
-            //SFTP sftp2 = new SFTP();
-            ////System.Text.StringBuilder sbDone = new System.Text.StringBuilder();
-            //int _TotalSftpTransfer = 0;
-            //string errMsg2 = "";
-
-            ////send zip files                    
-            //LogToSystemLog("Sending files to sftp...");
-            //LogToSystemLog("SynchronizeDirectories started...");
-
-            //if (!sftp2.SynchronizeDirectories(BANK_REPO, ref errMsg2, ref _TotalSftpTransfer))
-            //{
-            //    LogToErrorLog(Utilities.TimeStamp() + "RunBankProcess(): SynchronizeDirectories failed.Error " + errMsg2);
-            //}
-
-            //sftp2 = null;
-            //LogToSystemLog("Total zipped file(s) uploaded: " + _TotalSftpTransfer.ToString("N0"));
-
-            //return;
-            ////temp 06/20
 
             if (IsRefDateExist())
             {
@@ -122,45 +104,11 @@ namespace accpagibigph3srv
 
                 try
                 {
-                    using (StreamReader sr = new StreamReader(configFile))
-                    {
-                        while (!sr.EndOfStream)
-                        {
-                            string strLine = sr.ReadLine();
-                            switch (strLine.Trim().Split('=')[0].ToUpper())
-                            {
-                                case "WS_REPO":
-                                    WS_REPO = strLine.Trim().Split('=')[1];
-                                    break;
-                                case "BANK_REPO":
-                                    BANK_REPO = strLine.Trim().Split('=')[1];
-                                    break;
-                                case "DB_SERVER":
-                                    DB_SERVER = strLine.Trim().Split('=')[1];
-                                    break;
-                                case "DB_NAME":
-                                    DB_NAME = strLine.Trim().Split('=')[1];
-                                    break;
-                                case "DB_USER":
-                                    DB_USER = strLine.Trim().Split('=')[1];
-                                    break;
-                                case "DB_PASS":
-                                    DB_PASS = strLine.Trim().Split('=')[1];
-                                    break;
-                                case "PROCESS_INTERVAL_SECONDS":
-                                    PROCESS_INTERVAL_SECONDS = Convert.ToInt32(strLine.Trim().Split('=')[1]);
-                                    break;
-                                case "SEND_TO_SFTP":
-                                    SEND_TO_SFTP = Convert.ToInt16(strLine.Trim().Split('=')[1]);
-                                    break;
-                            }
-                        }
+                    config = new Config();
+                    var configData = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Config>>(File.ReadAllText(configFile));
+                    config = configData[0];
 
-                        sr.Dispose();
-                        sr.Close();
-                    }
-
-                    Utilities.ConStr = "Server=" + DB_SERVER + "; Database=" + DB_NAME + "; User=" + DB_USER + "; Password=" + DB_PASS + ";";
+                    Utilities.ConStr = config.DbaseConStrAub;
                 }
                 catch (Exception ex)
                 {
@@ -245,7 +193,7 @@ namespace accpagibigph3srv
                             }
                         }
 
-                        System.Threading.Thread.Sleep(PROCESS_INTERVAL_SECONDS * 1000); // 60000 = 1minute                        
+                        System.Threading.Thread.Sleep(config.ProcessIntervalSeconds * 1000); // 60000 = 1minute                        
                     }
                 }
             }
@@ -266,16 +214,14 @@ namespace accpagibigph3srv
 
             DateTime dtmLast = dtmReportDate;
             string strLastProcessTime = dtmLast.ToString();
-            string strNextProcessTime = dtmLast.AddSeconds(PROCESS_INTERVAL_SECONDS).ToString();
+            string strNextProcessTime = dtmLast.AddSeconds(config.ProcessIntervalSeconds).ToString();
             int intCntr = 0;
 
             System.Text.StringBuilder sbForDeletion = new System.Text.StringBuilder();
 
-            string doneFolder = string.Format("{0}\\DONE", BANK_REPO);
-            string transferFolder = string.Format("{0}\\FOR_TRANSFER", BANK_REPO);
+            string doneFolder = string.Format("{0}\\DONE", config.BankRepo);
+            string transferFolder = string.Format("{0}\\FOR_TRANSFER", config.BankRepo);
 
-            //string doneTodayFolder = string.Format("{0}\\{1}", doneFolder, dtmLast.ToString("yyyy-MM-dd")) + "_2";
-            //string transferTodayFolder = string.Format("{0}\\{1}", transferFolder, dtmLast.ToString("yyyy-MM-dd")) + "_2";
             string doneTodayFolder = string.Format("{0}\\{1}", doneFolder, dtmLast.ToString("yyyy-MM-dd"));
             string transferTodayFolder = string.Format("{0}\\{1}", transferFolder, dtmLast.ToString("yyyy-MM-dd"));
 
@@ -289,7 +235,7 @@ namespace accpagibigph3srv
             if (GetDailyTxnAndPackData(dtmLast))
             {
                 LogToSystemLog("Compressing folder/s...");
-                foreach (string strFolder in Directory.GetDirectories(BANK_REPO))
+                foreach (string strFolder in Directory.GetDirectories(config.BankRepo))
                 {
                     string acctNo = strFolder.Substring(strFolder.LastIndexOf("\\") + 1);
 
@@ -300,7 +246,7 @@ namespace accpagibigph3srv
                     else if (acctNo.Contains("-")) { }
                     else
                     {
-                        if (File.Exists(string.Format("{0}\\{1}.zip", BANK_REPO, acctNo)))
+                        if (File.Exists(string.Format("{0}\\{1}.zip", config.BankRepo, acctNo)))
                         {
                             sbForDeletion.AppendLine(strFolder);
                         }
@@ -340,19 +286,19 @@ namespace accpagibigph3srv
             string errMsg = "";
             SFTP sftp = null;
 
-            if (SEND_TO_SFTP == 1)
+            if (config.IsSendToSftp == 1)
             {
                 sftp = new SFTP();
-                //System.Text.StringBuilder sbDone = new System.Text.StringBuilder();
+
                 int _TotalSftpTransfer = 0;
 
                 //send zip files                    
                 LogToSystemLog("Sending files to sftp...");
                 LogToSystemLog("SynchronizeDirectories started...");
 
-                if (!sftp.SynchronizeDirectories(BANK_REPO, ref errMsg, ref _TotalSftpTransfer))
+                if (!sftp.SynchronizeDirectories(config.BankRepo, ref errMsg, ref _TotalSftpTransfer))
                 {
-                    LogToErrorLog(Utilities.TimeStamp() + "RunBankProcess(): SynchronizeDirectories failed.Error " + errMsg);
+                    LogToErrorLog(Utilities.TimeStamp() + "RunBankProcess(): SynchronizeDirectories failed. Error " + errMsg);
                 }
 
                 sftp = null;
@@ -367,10 +313,6 @@ namespace accpagibigph3srv
             LogToSystemLog("End: " + endTime);
             LogToSystemLog("End of process");
 
-            //disable if process is thru scheduled task
-            //Console.WriteLine(Utilities.TimeStamp() + "Last process: " + strLastProcessTime);
-            //Console.WriteLine(Utilities.TimeStamp() + "Waiting for next process on {0}...", strNextProcessTime);
-
             intDateProcess += 1;
 
             IsBankProcessReady = true;
@@ -381,7 +323,7 @@ namespace accpagibigph3srv
             DAL dal = new DAL();
             try
             {
-                string conStr = "Server=" + DB_SERVER + "; Database=" + DB_NAME + "; User=" + DB_USER + "; Password=" + DB_PASS + ";";
+                string conStr = config.DbaseConStrAub;
 
                 string doneIDs = "";
                 string doneIDsFile = Utilities.DoneIDsFile(dtmReportDate);
@@ -400,8 +342,8 @@ namespace accpagibigph3srv
                         int intRecord = 1;
                         foreach (DataRow rw in dtBankFiles.Rows)
                         {
-                            if (File.Exists(string.Format("{0}\\{1}.zip", BANK_REPO, rw["PagIBIGID"].ToString()))) { }
-                            else if (Directory.Exists(string.Format("{0}\\{1}", BANK_REPO, rw["PagIBIGID"].ToString()))) { }
+                            if (File.Exists(string.Format("{0}\\{1}.zip", config.BankRepo, rw["PagIBIGID"].ToString()))) { }
+                            else if (Directory.Exists(string.Format("{0}\\{1}", config.BankRepo, rw["PagIBIGID"].ToString()))) { }
                             else
                             {
                                 try
@@ -519,6 +461,16 @@ namespace accpagibigph3srv
         {
             return 10000;
         }
+
+        private static void SendEmail()
+            {
+
+         //   select* from tbl_SFTP
+         //  --where DatePosted > '2021-09-01'--cast(getdate() as date)
+
+         // --select* from tbl_Member
+         //--where EntryDate between '2021-10-04 00:00:00' and '2021-10-04 23:59:59'
+}
 
     }
 

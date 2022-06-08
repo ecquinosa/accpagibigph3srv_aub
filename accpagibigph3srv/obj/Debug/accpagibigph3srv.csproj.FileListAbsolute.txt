@@ -36,8 +36,10 @@ I:\EDEL QUINOSA\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv
 D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe.config
 D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\bin\Debug\accpagibigph3srv.exe
 D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\bin\Debug\accpagibigph3srv.pdb
-D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.csprojAssemblyReference.cache
 D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CoreCompileInputs.cache
 D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.CopyComplete
 D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.exe
 D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.pdb
+D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\bin\Debug\Newtonsoft.Json.dll
+D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\bin\Debug\Newtonsoft.Json.xml
+D:\WORK\Projects\accpagibigph3srv_aub\accpagibigph3srv\obj\Debug\accpagibigph3srv.csproj.AssemblyReference.cache

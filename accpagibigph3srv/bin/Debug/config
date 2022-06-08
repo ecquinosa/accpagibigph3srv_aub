@@ -1,12 +1,28 @@
-WS_REPO=F:\PAGIBIG\ACCPAGIBIGPH3
-BANK_REPO=F:\PAGIBIG\ACCPAGIBIGPH3\AUB\PACKUPDATA
-DB_SERVER=10.88.77.71
-DB_NAME=LCDB_01
-DB_USER=allcard
-DB_PASS=MarlboroLights#
-FTP_HOST=10.88.77.70
-FTP_PORT=52039
-FTP_USER=AllCard
-FTP_PASS=AllC@rD2019
-PROCESS_INTERVAL_SECONDS=20
-SEND_TO_SFTP=1
+[
+	{
+		"BankID": 1,
+		"DbaseConStrUbp": "Server=10.88.87.68;Database=LCDB_01;User=allcard;Password=MikasaAckerman#;",
+		"DbaseConStrAub": "Server=10.88.87.71;Database=LCDB_01;User=allcard;Password=MikasaAckerman#;",
+		"DbaseConStrSys": "Server=10.88.87.68;Database=LCDB_01_SYS;User=allcard;Password=MikasaAckerman#;",
+		"SmtpHost": "smtp.allcard.com.ph",
+		"SmtpPort": 587,
+		"SmtpUser": "ecquinosa@allcardtech.com.ph",
+		"SmtpPassword": "earl1106_1e",
+		"SmtpTimeout": 10000,
+		"IsSendToSftp": 1,
+		"EmailRecipientsTo": "ecquinosa@allcardtech.com.ph",
+		"EmailRecipientsCC": "ecquinosa@allcardtech.com.ph",
+		"WS_Repo": "F:\PAGIBIG\ACCPAGIBIGPH3",
+		"BankRepo": "F:\PAGIBIG\ACCPAGIBIGPH3\AUB\PACKUPDATA",
+		"SftpHost": "10.88.77.70",
+		"SftpPort": 52039,
+		"SftpUser": "AllCard",
+		"SftpPass": "AllC@rD2019",
+		"SftpSshHostKeyFingerprint": "AllC@rD2019",
+		"SftpLocalPath": "AllC@rD2019",
+		"SftpRemotePath": "AllC@rD2019",
+		"ProcessIntervalSeconds": 20,
+		"IsSendEmail": 1,
+		"LastSuccessEmailSend": "2020-09-16"
+	}
+]

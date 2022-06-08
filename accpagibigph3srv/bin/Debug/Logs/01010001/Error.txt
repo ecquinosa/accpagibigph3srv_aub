@@ -1,2 +1,5 @@
 01/01/0001 10:28:11 AM Ref dates are invalid 10/10/2019. Enter valid start date and end date. Application will close in 5 seconds.
 01/01/0001 10:31:08 AM Ref dates are 10/10/2019-1012/2019. Runtime error catched String was not recognized as a valid DateTime.. Application will close in 5 seconds.
+01/01/0001 04:20:54 PM Init(): Error reading config file. Runtime catched error Could not load file or assembly 'System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' or one of its dependencies. The paging file is too small for this operation to complete. (Exception from HRESULT: 0x800705AF)
+01/01/0001 04:20:59 PM Init(): Error reading config file. Runtime catched error Bad JSON escape sequence: \P. Path '[0].WS_Repo', line 15, position 18.
+01/01/0001 04:21:05 PM Init(): Error reading config file. Runtime catched error Bad JSON escape sequence: \P. Path '[0].WS_Repo', line 15, position 18.

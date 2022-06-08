@@ -39,6 +39,9 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\..\SecuraFileUploader\SecuraFileUploader\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.EnterpriseServices" />
@@ -53,6 +56,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="DAL.cs" />
     <Compile Include="FileCompression.cs" />
     <Compile Include="Program.cs" />
@@ -62,6 +66,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SendMail.cs" />
     <Compile Include="SFTP.cs" />
     <Compile Include="Utilities.cs" />
     <Compile Include="Web References\pagibig_aub_ws\Reference.cs">
@@ -72,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
